@@ -6,7 +6,7 @@ const pool = new Pool({
     host: "dpg-cn5se1mv3ddc738mjhv0-a",
     database: "library_leo8",
     password: "t1UTZF8NIY12RTqfYQlx7DbU24xCUSMo",
-    database: "library",
+    //database: "library",
     port: 5432,
 
     //user: "postgres",
