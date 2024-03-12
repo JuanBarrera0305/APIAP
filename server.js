@@ -16,7 +16,7 @@ app.get("/", (req, res)=> {
 })
 
 // API Route
-//http://localhost:8004/api/v1/inventory
+//http://localhost:8004/api/v1/library
 app.use("/api/v1/library", libraryRoutes);
 
 app.listen(port, () => console.log('running on ${port}'));
