@@ -1,8 +1,5 @@
 const express = require ("express");
 const libraryRoutes = require("./src/library/routes");
-const cors = require('cors');
-
-app.use(cors());
 
 const app = express();
 const port = 8004;
