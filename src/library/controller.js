@@ -29,18 +29,20 @@ const addBook = (req,res) => {
 
 //Update Library
 const updateLibrary = (req, res) => {
-    //const id = parseInt(req.params.id);
-    const { bookname, id } = req.body;
-    pool.query(queries.updateLibrary, [ bookname, id], (error, results) => {
+    const { bookname, booktype, id } = req.body;
+    pool.query(queries.updateLibrary, [bookname, booktype, id], (error, results) => {
         if(error) throw error;
-        res.status(200).send("Update Library Successfully")
-    })
-}
+        res.status(200).send("Updated successfully");
+    });
+};
+
+
 module.exports = {
     getLibrary,
     getLibraryById,
     addBook,
     updateLibrary,
+    
 };
 
 //test
